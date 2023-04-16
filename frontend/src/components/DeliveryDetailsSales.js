@@ -77,7 +77,7 @@ render() {
      <p style={{marginLeft:"125px", width:"70rem"}}>{this.state.estimatedDeliverytime}</p>
      <p>summery</p>
       <br/>
-     <p style={{marginLeft:"125px", width:"70rem"}}>{this.state.deliversummeryyNo}</p>
+     <p style={{marginLeft:"125px", width:"70rem"}}>{this.state.summery}</p>
 </div>
   )
 }
