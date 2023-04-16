@@ -1,5 +1,6 @@
 import axios from "axios";
 import React, {useState,useEffect} from "react";
+import { Link } from "react-router-dom";
 
 
 
@@ -43,9 +44,10 @@ function AllDelivery(){
               <tr key={index}>
                 <th scope="row">{index+1}</th>
                 <td>
-                  <a href = {`/get/${deliveries._id}`} style = {{textDecoration:'none'}}>
+                <Link to={`/get/${deliveries._id}/${deliveries.deliveryNo}/${deliveries.status}/${deliveries.currentLocation}/${deliveries.deliveredDate}/${deliveries.dispatchedTime}/${deliveries.estimatedDeliverytime}/${deliveries.summery}`}
+                    style={{ textDecoration: "none" }}>
                   {deliveries.deliveryNo}
-                  </a>
+                  </Link>
                 </td>
                 <td>{deliveries.status}</td>
                 <td>{deliveries.currentLocation}</td>

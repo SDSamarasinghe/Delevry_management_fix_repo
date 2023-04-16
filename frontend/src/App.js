@@ -19,7 +19,9 @@ function App() {
       <Routes>
         <Route path="/add" exact Component={AddDelivery}/>
         <Route path="/" exact Component={AllDelivery}/>
-        <Route path="/get/:id" exact Component={DeliveryDetailsSales}/>
+        <Route path="/get/:id/:deliveryNo/:status/:currentLocation/:deliveredDate/:dispatchedTime/:estimatedDeliverytime/:summery"
+        element={<DeliveryDetailsSales/>}
+        />
       </Routes>
       
       
