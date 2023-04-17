@@ -5,7 +5,7 @@ import { Link, useParams } from "react-router-dom";
 function withParams(Component) {
   return (props) => <Component {...props} params={useParams()} />;
 }
-
+//this is set as class component
 class DeliveryDetailsSales extends Component {
 
   constructor(props) {

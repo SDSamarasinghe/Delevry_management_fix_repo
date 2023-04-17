@@ -8,7 +8,7 @@ import AllDelivery from './components/AllDelivery';
 import DeliveryDetailsSales from './components/DeliveryDetailsSales';
 //import React, { Component } from 'react';
 
-
+//change paths as passing set of all attributes
 
 function App() {
   return (
@@ -19,6 +19,7 @@ function App() {
       <Routes>
         <Route path="/add" exact Component={AddDelivery}/>
         <Route path="/" exact Component={AllDelivery}/>
+        
         <Route path="/get/:id/:deliveryNo/:status/:currentLocation/:deliveredDate/:dispatchedTime/:estimatedDeliverytime/:summery"
         element={<DeliveryDetailsSales/>}
         />
